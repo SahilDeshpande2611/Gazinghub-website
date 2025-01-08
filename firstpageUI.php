@@ -1,11 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gazing Hub Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width:800px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .logo h1 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .navbar .logo p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .navbar .nav-links li {
+            display: inline;
+        }
+
+        .navbar .nav-links a {
+            font-size: 1rem;
+            padding: 10px 0px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            background-color: #ddd;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background-color: #f5f5f5;
+            text-align: justify;
+            flex-direction: row-reverse;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content .highlight {
+            color: #007bff;
+        }
+
+        .hero-content .explore-btn {
+            margin: 1rem;
+            padding: 10px 50px;
+            font-size: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero-content .explore-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .hero-image .placeholder {
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            border-radius: 8px;
+        }
+
+        /* Services Section */
+        .services {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .services .highlight {
+            color: #007bff;
+            text-align: justify;
+        }
+
+        .services p {
+            max-width: 700px;
+            margin: 1rem auto;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            text-align: center;
+            width: 200px;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            background-color: #fff;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card .placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: black;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            
+            }
+            ul{
+                padding:10px;
+            }
+            .service-cards{
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                align-items: center 
+            }
+            .hero{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+            } 
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <header class="navbar">
@@ -59,4 +250,5 @@
         </section>
     </div>
 </body>
+
 </html>
