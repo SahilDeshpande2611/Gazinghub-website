@@ -15,7 +15,7 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px 0px;
         }
 
         .feedback-section {
@@ -110,7 +110,7 @@
 
         .contact-info {
             background-color: #fff;
-            padding: 20px;
+            padding: 20px 0px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             max-width: 400px;
@@ -131,13 +131,23 @@
 
         .call-us {
             padding: 10px 50px;
-            font-size: 1em;
-            color: #fff;
+            font-size: 16px;
+            color: #f7f0f0;
             background-color: #007bff;
             border-radius: 3px;
             border: none;
             cursor: pointer;
-            margin-top: 15px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .call-us:hover {
+            background-color: #0056b3;
+            transition: background-color 0.3s ease;
+        }
+        .callbutton {
+            display: flex;
+            justify-content: center;
         }
 
         @media (max-width: 768px) {
@@ -185,15 +195,20 @@
             <h2>Contact Us</h2>
             <div class="contact-details">
                 <div class="contact-info">
-                    <p><strong>Address:</strong> 2277 Lorem Ave, San Diego, CA 22653</p>
-                    <p><strong>Hours:</strong> Monday - Friday: 10 am - 10 pm<br>Sunday: 11 am - 9 pm</p>
-                     <p><strong>Email:</strong> info@example.com</p>
-                    <div class="social-icons">
+                    <!-- <p><strong>Address:</strong> 2277 Lorem Ave, San Diego, CA 22653</p>
+                    <p><strong>Hours:</strong> Monday - Friday: 10 am - 10 pm<br>Sunday: 11 am - 9 pm</p> -->
+                     <p><strong>Email:</strong> rahulrdhamdhere@gmail.com</p>
+                     <p><strong>Phone:</strong> +91 86685 47825</p>
+                    <!-- <div class="social-icons" style="margin-bottom: 10px;">
                         <a href="#"><i class="icon-facebook"></i>F</a>
                         <a href="#"><i class="icon-instagram"></i>I</a>
                         <a href="#"><i class="icon-twitter"></i>T</a>
+                    </div> -->
+                    <div class="callbutton">
+                        <a href="tel:+918668547825" class="call-us">Call us</a>
                     </div>
-                    <button class="call-us"><a href="tel:+1234567890" style="text-decoration: none; color: #f7f0f0 ;">Call us</a></button>
+                    
+
                 </div>
             </div>
         </div>
