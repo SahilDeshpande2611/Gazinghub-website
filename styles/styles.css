@@ -405,8 +405,7 @@ font-size: 2rem;
 
 @media (max-width: 768px) {
   .navbar{
-  flex-wrap: nowrap;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
   }
