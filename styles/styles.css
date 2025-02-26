@@ -30,6 +30,7 @@ h2 {
 p {
   margin: 0.5rem 0;
   font-size: 1em;
+  text-align: justify;
 }
 
 a {
@@ -40,6 +41,8 @@ a {
 a:hover {
   background-color: #ddd;
 }
+
+
 
 /* Navbar */
 .navbar {
@@ -426,4 +429,14 @@ font-size: 2rem;
   .founder .text {
     text-align: center;
   }
+  .text{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  .explore-btn{
+    text-align: center;
+  }
+  
 }
